@@ -18,7 +18,7 @@ export default function EditUser() {
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
-
+  
   useEffect(() => {
     loadUser();
   }, []);
